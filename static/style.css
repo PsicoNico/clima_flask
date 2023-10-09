@@ -1,0 +1,74 @@
+/* style.css */
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Formulário */
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+}
+
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Resultados do clima */
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Estilo para a primeira linha (cabeçalho da tabela) */
+tr:first-child {
+    background-color: red;
+    color: white;
+}
+
+/* Estilo para a segunda linha (dados do clima) */
+tr:nth-child(2) {
+    background-color: #f0f0f0;
+}

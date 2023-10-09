@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de Clima</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Consulta de Clima</h1>
+    <form method="POST">
+        <label for="cidade">Digite o nome da cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+        <button type="submit">Consultar Clima</button>
+    </form>
+    
+    {% if cidade %}
+    <h2>Clima em {{ cidade }}:</h2>
+    <table>
+        <tr>
+            <th>Descrição</th>
+            <th>Temperatura (°C)</th>
+            <th>Umidade (%)</th>
+            <th>Pressão (hPa)</th>
+            <th>Velocidade do Vento (m/s)</th>
+        </tr>
+        <tr>
+            <td>{{ data_clima.descricao }}</td>
+            <td>{{ data_clima.temperatura }}</td>
+            <td>{{ data_clima.umidade }}</td>
+            <td>{{ data_clima.pressao }}</td>
+            <td>{{ data_clima.velocidade_vento }}</td>
+        </tr>
+    </table>
+    {% endif %}
+</body>
+</html>
