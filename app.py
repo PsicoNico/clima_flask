@@ -5,7 +5,7 @@ from googletrans import Translator
 app = Flask(__name__)
 
 def consultar_openweather(cidade):
-    API_KEY = "abc60009f2745afda114c2d341591172"
+    API_KEY = "YOUR_API_KEY"
     
     url = f'http://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={API_KEY}&units=metric'
     
